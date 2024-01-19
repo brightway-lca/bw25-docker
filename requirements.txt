@@ -1,2 +1,3 @@
 brightway25>=1.0.6
+ecoinvent_interface>=2.4.1
 pypardiso
