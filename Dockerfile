@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/minimal-notebook:python-3.12
+FROM jupyter/minimal-notebook:python-3.9
 
 # Some stuff from https://github.com/jupyter/docker-stacks/blob/master/scipy-notebook/Dockerfile
 LABEL maintainer="Chris Mutel <cmutel@gmail.com>"

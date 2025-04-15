@@ -5,7 +5,7 @@ Based on the [Jupyter minimal notebook](https://github.com/jupyter/docker-stacks
 ## What it Gives You
 
 * micromamba
-* Python 3.12
+* Python 3.9
 * Jupyterlab
 * brightway25 framework
 
@@ -63,4 +63,5 @@ The following images are built:
 | brightway/bw25:1.1.0-py312-micromamba| brightway25 1.1.0, py312, micromamba |
 | brightway/bw25:1.1.0-py311-micromamba| brightway25 1.1.0, py311, micromamba |
 | brightway/bw25:1.1.0-py310-micromamba| brightway25 1.1.0, py310, micromamba |
+| brightway/bw25:1.1.0-py39-micromamba| brightway25 1.1.0, py39, micromamba |
 
