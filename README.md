@@ -63,4 +63,5 @@ The following images are built:
 | brightway/bw25:1.1.0-py312-micromamba| brightway25 1.1.0, py312, micromamba |
 | brightway/bw25:1.1.0-py311-micromamba| brightway25 1.1.0, py311, micromamba |
 | brightway/bw25:1.1.0-py310-micromamba| brightway25 1.1.0, py310, micromamba |
+| brightway/bw25:1.1.0-py39-micromamba| brightway25 1.1.0, py39, micromamba |
 
