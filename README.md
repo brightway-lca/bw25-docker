@@ -4,8 +4,8 @@ Based on the [Jupyter minimal notebook](https://github.com/jupyter/docker-stacks
 
 ## What it Gives You
 
-* Miniconda
-* Python 3.10
+* micromamba
+* Python 3.12
 * Jupyterlab
 * brightway25 framework
 
@@ -21,6 +21,29 @@ Jupyterlab also allows you to run iPython sessions or even a terminal.
 
 See the [Jupyter documentation](https://github.com/jupyter/docker-stacks) for more usage options.
 
+
+## Installed bw dependencies
+
+The bw25 specific dependencies correspond to the [brightway25 1.1.0](https://github.com/brightway-lca/brightway25) release. 
+At build time for this image, they correspond to the following:
+
+| Package Name         | Version | Build              | Channel     |
+|----------------------|---------|--------------------|-------------|
+| brightway25          | 1.1.0   | py_0               | cmutel      |
+| bw2analyzer          | 0.11.7  | pyhd8ed1ab_1       | conda-forge |
+| bw2calc              | 2.0.2   | py312h7900ff3_0    | conda-forge |
+| bw2data              | 4.4.3   | pyhd8ed1ab_0       | conda-forge |
+| bw2io                | 0.9.9   | pyhd8ed1ab_0       | conda-forge |
+| bw2parameters        | 1.1.0   | pyhd8ed1ab_1       | conda-forge |
+| bw_aggregation       | 1.1     | py_0               | cmutel      |
+| bw_graph_tools       | 0.5     | py_0               | cmutel      |
+| bw_migrations        | 0.2     | pyhd8ed1ab_1       | conda-forge |
+| bw_processing        | 1.0     | pyhd8ed1ab_1       | conda-forge |
+| matrix_utils         | 0.6     | pyhd8ed1ab_1       | conda-forge |
+| pypardiso            | 0.4.6   | pyhd8ed1ab_2       | conda-forge |
+| ecoinvent_interface  | 3.1     | pyhd8ed1ab_1       | conda-forge |
+
+
 ## Tags
 
 ### brightway25
@@ -28,17 +51,13 @@ See the [Jupyter documentation](https://github.com/jupyter/docker-stacks) for mo
 The [brightway25](https://github.com/brightway-lca/brightway25) docker images are currently built and
 tagged based on the following different components of the image
 
-+ brightway25 metapackage version (1.0.6)
++ brightway25 metapackage version (1.1.0)
 + python version (py310, py311, py312)
-+ the python distribution (official python 3 or miniconda3)
-+ Ecoinvent 3.X compatibility (3.8, 3.9) version [^1]
++ the python distribution (micromamba)
 
 The following images are built:
 
 | Image Name | components |
 | ---------- | ---------- |
-| brightway/bw25:latest | brightway25 1.0.6, py310, miniconda3, compatible with ecoinvent 3.9 |
+| brightway/bw25:latest | brightway25 1.1.0, py312, micromamba |
 
-
-
-[^1]: Until a release of [bw2io](https://github.com/brightway-lca/brightway2-io) that is compatible with any ecoinvent version and all bw2x.
