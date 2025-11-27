@@ -1,6 +1,6 @@
 # Dockerfile for Brightway **25**
 
-Based on the [Jupyter minimal notebook](https://github.com/jupyter/docker-stacks/tree/master/minimal-notebook).
+Based on the [Jupyter minimal notebook](https://github.com/jupyter/docker-stacks/tree/main/images/minimal-notebook).
 
 ## What it Gives You
 
