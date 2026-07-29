@@ -1,3 +1,4 @@
-brightway25>=1.0.6
+brightway25>=1.1.1
 ecoinvent_interface>=3.1
 pypardiso
+matplotlib

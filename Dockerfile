@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/minimal-notebook:python-3.12
+FROM quay.io/jupyter/minimal-notebook:python-3.11
 
 # Some stuff from https://github.com/jupyter/docker-stacks/blob/master/scipy-notebook/Dockerfile
 LABEL maintainer="Chris Mutel <cmutel@gmail.com>"
@@ -9,8 +9,8 @@ USER $NB_USER
 
 ARG REQUIREMENTS_FILE="requirements.txt"
 COPY ${REQUIREMENTS_FILE} /tmp/
-RUN mamba install -y -q -c conda-forge -c cmutel --file /tmp/${REQUIREMENTS_FILE} && \
-	mamba clean --all -f -y && \
+RUN conda install -y -q -c conda-forge -c cmutel --file /tmp/${REQUIREMENTS_FILE} && \
+	conda clean --all -f -y && \
 	fix-permissions "${CONDA_DIR}" && \
 	fix-permissions "/home/${NB_USER}"
 
